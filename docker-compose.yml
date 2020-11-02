@@ -1,0 +1,11 @@
+﻿version: "3"
+services:
+  pvs_studio:
+    container_name: pvs_studio
+    build: .
+    # ports:
+    #  - "172.17.0.1:2025:25"
+    hostname: pvsstudio
+    volumes:
+      - "./files:/var/run/files"
+      - "./settings:/root/.config/PVS-Studio"
