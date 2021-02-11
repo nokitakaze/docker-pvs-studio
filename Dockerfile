@@ -12,8 +12,8 @@ RUN apt-get update && \
 
 # RUN apt-get install --yes --no-install-recommends net-tools mc telnet
 
-RUN wget 'https://files.viva64.com/pvs-studio-7.09.42228.74-amd64.deb' && \
-    wget 'https://files.viva64.com/pvs-studio-dotnet-7.09.41435.312-amd64.deb' -O 'pvs-studio-dotnet-7.09.41435.312-amd64.deb' && \
+RUN wget 'https://nktkz.s3.eu-central-1.amazonaws.com/development/github/docker-pvs-studio/pvs-studio-7.09.42228.74-amd64.deb' -O 'pvs-studio-7.09.42228.74-amd64.deb' && \
+    wget 'https://nktkz.s3.eu-central-1.amazonaws.com/development/github/docker-pvs-studio/pvs-studio-dotnet-7.09.41435.312-amd64.deb' -O 'pvs-studio-dotnet-7.09.41435.312-amd64.deb' && \
     dpkg -i pvs-studio-7.09.42228.74-amd64.deb && \
     dpkg -i pvs-studio-dotnet-7.09.41435.312-amd64.deb && \
     rm pvs-studio-7.09.42228.74-amd64.deb pvs-studio-dotnet-7.09.41435.312-amd64.deb
